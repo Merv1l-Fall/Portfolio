@@ -41,7 +41,9 @@ header{
 	border-radius: 0.5rem;
 	padding: 0.5rem;
 	font-family: "Poppins", serif;
-	font-weight: bold
+	font-weight: bold;
+	cursor: pointer;
+	transition: all ease-in-out 0.2s;
 }
 
 .contact-button{
@@ -54,4 +56,10 @@ header{
 	margin-left: 0.5rem;
 	font-family: "Poppins", serif;
 	font-weight: 600;
+	cursor: pointer;
+	transition: all ease-in-out 0.2s;
+}
+
+.contact-button:hover, .about-button:hover{
+	scale: 1.2;
 }
