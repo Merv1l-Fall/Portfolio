@@ -1,0 +1,82 @@
+#start-page{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.image-container{
+	margin-top: 6rem;
+}
+
+#profile-picture{
+	width: 18rem;
+}
+
+.text-top-container > *{
+	color: white;
+	text-align: center;
+	font-family: "Poppins", serif;
+
+}
+
+.text-top-container h1{
+	font-size: 5rem;
+	font-weight: 700;
+	margin-bottom: 0;
+	line-height: 4.2rem;
+	margin-top: 1rem;
+}
+
+.sub-header{
+	font-size: 2rem;
+	font-weight: 250;
+	margin-bottom: 0.5rem;
+	line-height: 2rem;
+}
+
+.who-container > *{
+	color: white;
+}
+
+.who-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 10rem;
+	max-width: 65%;
+}
+
+
+.who-container h2{
+	text-align: center;
+	font-size: 4rem;
+	font-weight: 700;
+	margin-bottom: 0;
+	line-height: 4.2rem;
+	margin-top: 1rem;
+}
+
+.facts-text{
+	text-align: center;
+	background: linear-gradient(95deg, #9C83FF 57.09%, #FF9051 87.74%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	letter-spacing: 1rem;
+	font-size: 1rem;
+	margin-bottom: 1rem;
+	
+}
+
+.about-text{
+	font-size: 1.1rem;
+	font-weight: 500;
+}
+
+#about-link{
+	display: inline;
+	cursor: pointer;
+	text-decoration: underline 1px;
+	font-family: "Inter", serif;
+	font-size: 1.1rem;
+}

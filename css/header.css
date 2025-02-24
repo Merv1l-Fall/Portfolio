@@ -1,0 +1,57 @@
+header{
+	display: flex;
+	justify-content: space-between;
+	margin: 2rem;
+	margin-left: 10rem;
+	margin-right: 10rem;
+	font-family: "Poppins", serif;
+
+}
+
+
+.header-name-container > p{
+	color: white;
+	font-family: Poppins;
+}
+
+.header-name-1{
+	font-weight: 700;
+	font-size: 1.4rem;
+	margin-right: 0.2rem;
+	letter-spacing: 0.1rem;
+	line-height: normal;
+}
+
+.header-name-2{
+	font-size: 0.7rem;
+	font-weight: 100;
+	letter-spacing: 0.3rem;
+	margin: 0;
+	padding: 0;
+	text-align: end;
+	text-transform: uppercase;
+	line-height: 0;
+}
+
+.about-button{
+	border: 0.13rem solid var(--grayColor);
+	width: 6rem;
+	color: rgb(211, 211, 211);
+	background-color: black;
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+	font-family: "Poppins", serif;
+	font-weight: bold
+}
+
+.contact-button{
+	border: 0.13rem solid white;
+	width: 6rem;
+	color: black;
+	background-color: white;
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+	margin-left: 0.5rem;
+	font-family: "Poppins", serif;
+	font-weight: 600;
+}
