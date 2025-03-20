@@ -70,7 +70,7 @@
 	
 }
 
-.about-text{
+.about-text, .more-info{
 	font-size: 1.5rem;
 	font-weight: 500;
 	line-height: 1.5;
@@ -78,6 +78,9 @@
 	text-align: left;
 }
 
+.more-info{
+	width: 100%;
+}
 #about-link, #course-plan{
 	display: inline;
 	cursor: pointer;
@@ -86,6 +89,7 @@
 	font-size: 1.5rem;
 	font-weight: 500;
 	white-space: nowrap;
+	transition: color ease-in-out 0.2s;
 }
 
 #about-link:hover{
