@@ -53,11 +53,16 @@ header{
 	background-color: white;
 	border-radius: 0.5rem;
 	padding: 0.5rem;
-	margin-left: 0.5rem;
+	/* margin-left: 0.5rem; */
 	font-family: "Poppins", serif;
 	font-weight: 600;
 	cursor: pointer;
 	transition: all ease-in-out 0.2s;
+}
+
+.header-buttons-container{
+	display: flex;
+	gap: 1rem;
 }
 
 .contact-button:hover, .about-button:hover{

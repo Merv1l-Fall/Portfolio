@@ -32,6 +32,7 @@
 	font-weight: 250;
 	margin-bottom: 0.5rem;
 	line-height: 2rem;
+	margin-top: 0.5rem;
 }
 
 .section-container > *{
@@ -72,15 +73,19 @@
 .about-text{
 	font-size: 1.5rem;
 	font-weight: 500;
+	line-height: 1.5;
+	margin-top: 1rem;
+	text-align: left;
 }
 
-#about-link{
+#about-link, #course-plan{
 	display: inline;
 	cursor: pointer;
 	text-decoration: underline 1px;
 	font-family: "Inter", serif;
 	font-size: 1.5rem;
 	font-weight: 500;
+	white-space: nowrap;
 }
 
 #about-link:hover{
