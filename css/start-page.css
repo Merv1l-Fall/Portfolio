@@ -36,7 +36,7 @@
 }
 
 .section-container > *{
-	color: white;
+	color: rgb(212, 212, 212);
 }
 
 .section-container{
@@ -92,6 +92,168 @@
 	transition: color ease-in-out 0.2s;
 }
 
-#about-link:hover{
+#about-link:hover, #course-plan:hover{
 	color: #FF9051;
+}
+
+.icon-container{
+	margin: 2rem;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	width: 100%;
+}
+
+.icon{
+	max-width: 7.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: auto;
+}
+
+.icon-header{
+	width: 7.5rem;
+	height: 2.7rem;
+	border-radius: 0.7rem;
+	border: 0.5px solid #9C83FF;
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-weight: 400;
+	margin-top: 0.5rem;
+}
+
+.logo{
+	width: 80%;
+	height: 100px;
+	margin-top: 0.5rem;
+}
+
+.links-container{
+	margin-top: 2rem;
+	margin-bottom: 10rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	width: 100%;
+	gap: 2rem;
+}
+
+.link{
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.link-icon-background{
+	background-color: white;
+	width: 9.5rem;
+	height: 6rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 1rem;
+	min-width: 9.5rem;
+
+	.link-icon-vq {
+		width: 8rem;
+	}
+
+	.link-icon-github{
+		width: 4rem;
+	}
+
+	.link-icon-cv{
+		width: 3rem;
+	}
+	
+	.link-icon-linkedin{
+		width: 6rem;
+	}
+}
+
+.link-text{
+	max-width: 18rem;
+	margin-left: 1rem;
+
+	h3{
+		font-weight: bold;
+	}
+}
+
+@media (max-width: 1100px){
+	.section-container{
+		max-width: 90%;
+	}
+}
+
+@media (max-width: 800px) {
+	.image-container{
+		margin-top: 4rem;
+	}
+	
+	#profile-picture{
+		width: 14rem;
+	}
+	.text-top-container{
+		margin-left: 1rem;
+		margin-right: 1rem;
+		h1{
+			font-size: 3rem;
+		}
+		.sub-header{
+			font-size: 1.5rem;
+		
+		}
+	}
+
+	.more-info, #about-link, #course-plan{
+		font-size: 1rem;
+		
+	}
+
+	.section-container{
+		margin-top: 6rem;
+
+		h2{
+			font-size: 3rem;
+		}
+	}
+
+	.about-text{
+		font-size: 1rem;
+	}
+
+	.icon-container{
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.links-container{
+		grid-template-columns: 1fr;
+	}
+}
+
+@media(max-width: 540px){
+	.links-container{
+		grid-template-rows: 1fr;
+	}
+	
+	.link{
+		flex-direction: column;
+	}
+	
+	.link-text{
+		margin: 0;
+		margin-top: 0.4rem;
+
+		h3{
+			text-align: center;
+		}
+
+		p{
+		text-align: center;
+		}
+	}
 }

@@ -18,6 +18,7 @@ body{
 	background-position: center 0rem;
 	max-width: 1440px;
 	margin: auto;
+	background-size: 150%;
 }
 
 main{
@@ -32,4 +33,11 @@ button{
 
 .display-flex{
 	display: flex;
+}
+
+@media(max-width: 1100px){
+	body{
+		background-position: center 5rem ;
+		background-size: 200%;
+	}
 }
