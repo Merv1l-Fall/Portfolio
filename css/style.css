@@ -13,7 +13,7 @@
 
 body{
 	background-color: black;
-	background-image: url("/assets/background-image.svg");
+	background-image: url("assets/background-image.svg");
 	background-repeat: no-repeat;
 	background-position: center 0rem;
 	max-width: 1440px;
