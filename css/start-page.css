@@ -36,7 +36,7 @@
 }
 
 .section-container > *{
-	color: rgb(212, 212, 212);
+	color: rgb(255, 255, 255);
 }
 
 .section-container{
@@ -147,6 +147,10 @@
 	cursor: pointer;
 }
 
+.link-icon-background:hover{
+	scale: 1.1;
+}
+
 .link-icon-background{
 	background-color: white;
 	width: 9.5rem;
@@ -156,6 +160,7 @@
 	justify-content: center;
 	border-radius: 1rem;
 	min-width: 9.5rem;
+	transition: scale 0.2s ease-in-out;
 
 	.link-icon-vq {
 		width: 8rem;
@@ -177,10 +182,18 @@
 .link-text{
 	max-width: 18rem;
 	margin-left: 1rem;
+	transition: color 0.2s ease-in-out;
 
 	h3{
 		font-weight: bold;
+		text-decoration: underline;
 	}
+
+}
+
+.link-text:hover{
+	color: #FF9051;
+	
 }
 
 @media (max-width: 1100px){

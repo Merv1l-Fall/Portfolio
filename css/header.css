@@ -93,6 +93,7 @@ header{
 		flex-direction: row;
 		margin-top: 0.5rem;
 		justify-content: center;
+		gap: 3rem;
 	}
 	.header-name-container{
 		display: flex;
@@ -101,9 +102,10 @@ header{
 
 	.header-name-2{
 		line-height: 1.4rem;
-		margin-top: 0.6rem;
+		margin-top: 0.5rem;
 		font-size: 1rem;
 		margin-left: 0.2rem;
+		font-weight: 200;
 		text-align: start;
 	}
 
