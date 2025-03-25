@@ -1,0 +1,28 @@
+.collage {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.big {
+    grid-column: span 2;
+    grid-row: span 2;
+    width: 43rem;
+    height: 43rem;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.small {
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.small:hover {
+    transform: scale(1.1);
+}
