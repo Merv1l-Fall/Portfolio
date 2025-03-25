@@ -8,15 +8,15 @@
 .big {
     grid-column: span 2;
     grid-row: span 2;
-    width: 43rem;
-    height: 43rem;
+    width: 33rem;
+    height: 33rem;
     object-fit: cover;
     border-radius: 8px;
 }
 
 .small {
-    width: 20rem;
-    height: 20rem;
+    width: 15rem;
+    height: 15rem;
     object-fit: cover;
     border-radius: 8px;
     cursor: pointer;
