@@ -1,8 +1,39 @@
+#about-page{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.about-top-container{
+	margin-bottom: 5em;
+}
+
+.about-top-container h1{
+	font-size: 5rem;
+	font-weight: 700;
+	margin-bottom: 0;
+	line-height: 4.2rem;
+	margin-top: 5rem;
+}
+
+.about-top-container > *{
+	color: white;
+	text-align: center;
+	font-family: "Poppins", serif;
+
+}
 .collage {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 3rem;
+	position: relative;
+}
+.collage-img-info{
+	position: absolute;
+	color: white;
+	top: 33rem;
+	left: 0.3rem;
 }
 
 .big {
@@ -25,4 +56,28 @@
 
 .small:hover {
     transform: scale(1.1);
+}
+
+
+.about-me{
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 5rem;
+	max-width: 51rem;
+
+	h2{
+		font-size: 2rem;
+		font-weight: bold;
+	}
+}
+
+.about-me-text{
+	font-size: 1.5rem;
+	font-weight: 500;
+	line-height: 1.5;
+	margin-top: 1rem;
+	text-align: left;
 }
