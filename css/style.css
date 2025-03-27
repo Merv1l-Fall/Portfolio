@@ -35,6 +35,10 @@ button{
 	display: flex;
 }
 
+.display-none{
+	display: none;
+}
+
 @media(max-width: 1100px){
 	body{
 		background-position: center 5rem ;

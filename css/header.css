@@ -8,6 +8,10 @@ header{
 
 }
 
+.header-name-container{
+	cursor: pointer;
+	transition: all ease-in-out 0.2s;
+}
 
 .header-name-container > p{
 	color: white;
@@ -65,7 +69,9 @@ header{
 	gap: 1rem;
 }
 
-.contact-button:hover, .about-button:hover{
+.contact-button:hover, 
+.about-button:hover,
+.header-name-container:hover{
 	scale: 1.2;
 }
 

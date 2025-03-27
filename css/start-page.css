@@ -1,7 +1,8 @@
 #start-page{
-	display: none;
+	/* display: none; */
 	flex-direction: column;
 	align-items: center;
+	background-color: rgba(0, 0, 0, 0.452);
 }
 
 .image-container{
@@ -46,6 +47,7 @@
 	justify-content: center;
 	margin-top: 10rem;
 	max-width: 65%;
+	
 }
 
 
@@ -145,10 +147,16 @@
 	display: flex;
 	align-items: center;
 	cursor: pointer;
+	transition: scale ease-in-out 0.2s;
 }
 
-.link-icon-background:hover{
+.link:hover{
 	scale: 1.1;
+	
+	.link-text{
+		color: #FF9051;
+		
+	}
 }
 
 .link-icon-background{
@@ -191,10 +199,7 @@
 
 }
 
-.link-text:hover{
-	color: #FF9051;
-	
-}
+/* Media Queries */
 
 @media (max-width: 1100px){
 	.section-container{

@@ -1,7 +1,8 @@
 #about-page{
-	display: flex;
+	/* display: flex; */
 	flex-direction: column;
 	align-items: center;
+	background-color: rgba(0, 0, 0, 0.452);
 }
 
 .about-top-container{
@@ -28,6 +29,7 @@
     grid-template-rows: repeat(3, 1fr);
     gap: 3rem;
 	position: relative;
+	
 }
 .collage-img-info{
 	position: absolute;
@@ -66,11 +68,15 @@
 	align-items: center;
 	justify-content: center;
 	margin-top: 5rem;
-	max-width: 51rem;
+	
 
 	h2{
 		font-size: 2rem;
 		font-weight: bold;
+	}
+
+	p{
+		max-width: 65%;
 	}
 }
 
