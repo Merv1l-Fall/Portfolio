@@ -95,7 +95,7 @@
 }
 
 #about-link:hover, #course-plan:hover{
-	color: #FF9051;
+	color: var(--mainOrange);
 }
 
 .icon-container{
@@ -147,14 +147,14 @@
 	display: flex;
 	align-items: center;
 	cursor: pointer;
-	transition: scale ease-in-out 0.2s;
+	transition: all ease-in-out 0.2s;
 }
 
 .link:hover{
-	scale: 1.1;
+	transform: scale(1.1);
 	
 	.link-text{
-		color: #FF9051;
+		color: var(--mainOrange);
 		
 	}
 }

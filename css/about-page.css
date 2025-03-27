@@ -68,6 +68,7 @@
 	align-items: center;
 	justify-content: center;
 	margin-top: 5rem;
+	margin-bottom: 10rem;
 	
 
 	h2{
@@ -80,10 +81,25 @@
 	}
 }
 
-.about-me-text{
+.about-me-text, .cta-text, .cta-link{
 	font-size: 1.5rem;
 	font-weight: 500;
 	line-height: 1.5;
 	margin-top: 1rem;
 	text-align: left;
+	width: 100%;
+}
+
+.cta-link{
+	margin-top: 0rem;
+}
+
+#cta-contact-button{
+	text-decoration: underline;
+	cursor: pointer;
+	transition: all ease-in-out 0.2s;
+}
+
+#cta-contact-button:hover{
+	color: var(--mainOrange);
 }
