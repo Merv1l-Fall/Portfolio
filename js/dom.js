@@ -17,7 +17,7 @@ function showAboutPage() {
 };
 
 function showStartPage() {
-	hidePages
+	hidePages()
 	startPage.classList.remove("display-none")
 	startPage.classList.add("display-flex")
 };
