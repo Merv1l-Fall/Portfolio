@@ -2,9 +2,14 @@ const aboutMeButton = document.querySelector(".about-button");
 const contactButton = document.querySelector(".contact-button");
 const headerName = document.querySelector(".header-name-container");
 const aboutMeLink = document.getElementById("about-link");
+const popupContainer = document.querySelector(".popup-container")
+const closePopupButton = document.querySelector(".close-popup")
+const coursePlanButton = document.getElementById("course-plan")
+const popup = document.querySelector(".popup")
 
 const startPage = document.getElementById("start-page");
 const aboutPage = document.getElementById("about-page");
+const body = document.querySelector("body")
 
 
 
@@ -21,7 +26,7 @@ function showPage(sectionId) {
         // Update URL
         history.pushState({ section: sectionId }, "", `#${sectionId}`);
     }
-}
+};
 
 function hidePages() {
     document.querySelectorAll("section").forEach(sec => {
@@ -29,22 +34,61 @@ function hidePages() {
         sec.classList.remove("display-flex");
     });
     window.scrollTo(0, 0);
-}
+};
+
+
+function showPopup(){
+	popupContainer.classList.add("display-flex")
+	popupContainer.classList.remove("display-none")
+	body.classList.add("no-scroll")
+	popup.show()
+};
+
+function hidePopup(){
+	popupContainer.classList.remove("display-flex")
+	popupContainer.classList.add("display-none")
+	body.classList.remove("no-scroll")
+	popup.close()
+	console.log("hide func")
+};
 
 
 
 //Navigation buttons
+coursePlanButton.addEventListener("click", () => {
+	showPopup();
+})
+
+popupContainer.addEventListener("click", (event) => {
+	event.stopPropagation();
+	hidePopup();
+});
+
+closePopupButton.addEventListener("click", () => {
+	hidePopup();
+});
+
+popup.addEventListener("click", (event) => {
+	event.stopPropagation();
+})
+
 aboutMeButton.addEventListener("click", () => {
-	showPage("about-page")
+	showPage("about-page");
 } );
 
 headerName.addEventListener("click", () => {
-	showPage("start-page")
+	showPage("start-page");
 });
 
 aboutMeLink.addEventListener("click", () => {
-	showPage("about-page")
-})
+	showPage("about-page");
+});
+
+
+
+
+
+//routing
 
 //make back and forward buttons
 window.onpopstate = function (event) {

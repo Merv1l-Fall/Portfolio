@@ -1,0 +1,53 @@
+.popup-container{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100%;
+	
+	
+	background-color: rgba(0, 0, 0, 0.466);
+	justify-content: center;
+	align-items: center;
+	
+	/* making sure it stays on top */
+	z-index: 10; 
+	
+}
+
+.popup{
+	background-color: #1d1d1d;
+	border-radius: 1rem;
+	max-width: 64rem;
+	min-height: 40rem;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 0;
+	position: relative;
+	z-index: 11; 
+}
+
+.course-iframe{
+	width: 62rem;
+	height: 100%;
+	margin: 1rem;
+	flex-grow: 1;
+}
+.close-popup:hover{
+	transform: scale(1.1);
+}
+
+.close-popup{
+	margin: 1rem;
+	border: 0.13rem solid #1d1d1d;
+	width: 6rem;
+	color: #1d1d1d;
+	background-color: rgb(255, 255, 255);
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+	font-family: "Poppins", serif;
+	font-weight: 600;
+	cursor: pointer;
+	transition: transform ease-in-out 0.2s;
+};

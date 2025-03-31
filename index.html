@@ -7,6 +7,7 @@
 	<title>Vilmer Fall</title>
 
 	<!-- CSS -->
+	<link rel="stylesheet" href="./css/popup.css">
 	<link rel="stylesheet" href="./css/style.css">
 	<link rel="stylesheet" href="./css/header.css">
 	<link rel="stylesheet" href="./css/start-page.css">
@@ -99,7 +100,7 @@
 			<div class="section-container">
 				<h2>Länkar</h2>
 				<div class="links-container">
-					<div class="link">
+					<a class="link" href="https://github.com/Merv1l-Fall" target="_blank">
 						<div class="link-icon-background">
 							<img class="link-icon-github" src="./assets/devicon_github-wordmark.svg" alt="github logo">
 						</div>
@@ -107,8 +108,8 @@
 							<h3>Github</h3>
 							<p>Hitta mig på github och se alla projekt jag varit involverad i här!</p>
 						</div>
-					</div>
-					<div class="link">
+					</a>
+					<a class="link" href="https://www.linkedin.com/in/vilmer-fall-04555727a/" target="_blank">
 						<div class="link-icon-background">
 							<img class="link-icon-linkedin" src="./assets/logos_linkedin.svg" alt="Linkedin logo">
 						</div>
@@ -116,17 +117,17 @@
 							<h3>Linkedin</h3>
 							<p>Hitta mig på LinkedIn och lägg till mig som kontakt!</p>
 						</div>
-					</div>
-					<div class="link">
+					</a>
+					<a class="link" href="./assets/vilmer-fall.pdf" target="_blank">
 						<div class="link-icon-background">
 							<img class="link-icon-cv" src="./assets/pepicons-pop_cv.svg" alt="an icon to represent cv">
 						</div>
 						<div class="link-text">
 							<h3>CV</h3>
-							<p>Se eller ladda ner mitt CV här</p>
+							<p>Se mitt CV här</p>
 						</div>
-					</div>
-					<div class="link">
+					</a>
+					<a class="link" href="https://velveteenqueentheband.com/">
 						<div class="link-icon-background">
 							<img class="link-icon-vq" src="./assets/Velveteen.png" alt="my bands logo">
 						</div>
@@ -134,7 +135,7 @@
 							<h3>Velveteen Queen</h3>
 							<p>Vill du veta mer om mitt band? Då kan du kika här!</p>
 						</div>
-					</div>
+					</a>
 				</div>
 			</div>
 		</section>
@@ -146,18 +147,18 @@
 			</div>
 			<div class="collage">
 				<p class="collage-img-info"></p>
-				<img id="big-image" class="big" src="./assets/images/SRF-1.jpg" alt="Mitt under spelning på Sweden Rock Festival 20244">
+				<img id="big-image" class="big" src="./assets/images/studio-1.jpg" alt="Studiobild från inspelningen av album nummer 2">
+				
 				
 				<img class="small" src="./assets/images/fishing-1.jpg" alt="Fiskeresa 2023 med en fin fångst">
-				<img class="small" src="./assets/images/studio-1.jpg" alt="Studiobild från inspelningen av album nummer 2">
+				<img class="small" src="./assets/images/SRF-1.jpg" alt="Mitt under spelning på Sweden Rock Festival 20244">
 				<img class="small" src="./assets/images/SRF-2.jpg" alt="Vi tackar publiken på Sweden Rock Festival 2024">
 				<img class="small" src="./assets/images/Slotte-1.jpg" alt="Ett porträtt från en fotostund jag gjorde med en kompis">
 				<img class="small" src="./assets/images/band-1.jpg" alt="Backstage från vår Europa turné 2024">
 			</div>
 
 			<div class="about-me">
-				<h2>Hej! Jag heter Vilmer!</h2>
-				<p class="about-me-text"> Jag studerar just nu för att bli frontend utvecklare - men det vet du redan eftersom du klickat dig hit. Så vem är jag som person? En social person som ofta beskrivs som glad och trevlig av nära och kära. Jag älskar musik, allt som är tekniskt och att spendera tid med ett fiskespö i handen</p>
+				<p class="about-me-text"> Jag studerar just nu för att bli frontend utvecklare - men det vet du redan eftersom du klickat dig hit. Så vem är jag som person? En social typ som ofta beskrivs som glad och trevlig av nära och kära. Jag älskar musik, allt som är tekniskt och att spendera tid med ett fiskespö i handen</p>
 				<p class="about-me-text">När jag inte kodar spelar jag bas i Velveteen Queen - och för mig finns ingen skillnad i hur jag närmar mig de två. Jag jobbar lika hårt med musiken som jag gör med utveckling, och bägge handlar om att skapa något som inte bara ser bra ut, utan som också känns rätt.
 				Den inställningen har tagit Velveteen Queen långt, och nyligen blev vi signade av Warner Music, ett av världens största skivbolag - något jag är otroligt stolt över.</p>
 				<p class="cta-text">Vill du snacka kod, vilket rockband som är bäst eller bara lära känna mig?</p>
@@ -165,6 +166,13 @@
 			</div>
 
 		</section>
+
+		<div class="popup-container display-none">
+			<dialog class="popup">
+				<iframe class="course-iframe" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRbrx_UfQY-6f3eSTOxJ0kGEOQ3SDllSwyTAk_84sEw_aZCR1livyZXNH0dfpFQyDLCUAWIChPtNOqy/pubhtml?widget=true&amp;headers=false"></iframe>
+				<button class="close-popup">Stäng</button>
+			</dialog>
+		</div>
 	</main>
 </body>
 
