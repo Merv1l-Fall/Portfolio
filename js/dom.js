@@ -9,39 +9,58 @@ const aboutPage = document.getElementById("about-page");
 
 
 
-function showAboutPage() {
-	hidePages()
-	aboutPage.classList.remove("display-none")
-	aboutPage.classList.add("display-flex")
-	
-};
+function showPage(sectionId) {
+    hidePages();
 
-function showStartPage() {
-	hidePages()
-	startPage.classList.remove("display-none")
-	startPage.classList.add("display-flex")
-};
+    // Show the selected section
+    const section = document.getElementById(sectionId);
+    if (section) {
+        section.classList.remove("display-none");
+        section.classList.add("display-flex");
+
+        // Update URL
+        history.pushState({ section: sectionId }, "", `#${sectionId}`);
+    }
+}
 
 function hidePages() {
-	startPage.classList.add("display-none")
-	startPage.classList.remove(".display-flex")
-	aboutPage.classList.add("display-none")
-	aboutPage.classList.remove(".display-flex")
-	window.scrollTo(0,0); 
-};
+    document.querySelectorAll("section").forEach(sec => {
+        sec.classList.add("display-none");
+        sec.classList.remove("display-flex");
+    });
+    window.scrollTo(0, 0);
+}
 
 
 
 //Navigation buttons
 aboutMeButton.addEventListener("click", () => {
-	showAboutPage()
-	// console.log("about button pressed")
+	showPage("about-page")
 } );
 
 headerName.addEventListener("click", () => {
-	showStartPage()
+	showPage("start-page")
 });
 
 aboutMeLink.addEventListener("click", () => {
-	showAboutPage()
+	showPage("about-page")
 })
+
+//make back and forward buttons
+window.onpopstate = function (event) {
+    if (event.state && event.state.section) {
+        showPage(event.state.section);
+    } else {
+        showPage("startPage"); // First Page
+    }
+};
+
+//check url to make sure correct section is shown
+window.onload = function () {
+    const sectionFromURL = location.hash.substring(1);
+    if (document.getElementById(sectionFromURL)) {
+        showPage(sectionFromURL);
+    } else {
+        showPage("startPage"); //First page
+    }
+};
