@@ -14,6 +14,16 @@ const body = document.querySelector("body")
 
 
 
+function hidePages() {
+	document.querySelectorAll("section").forEach(sec => {
+		if (!sec.classList.contains("display-none")) {
+			sec.classList.add("display-none");
+			sec.classList.remove("display-flex");
+
+		}
+	});
+	window.scrollTo(0, 0);
+};
 function showPage(sectionId) {
     hidePages();
 
@@ -28,16 +38,6 @@ function showPage(sectionId) {
     }
 };
 
-function hidePages() {
-    document.querySelectorAll("section").forEach(sec => {
-		if (!sec.classList.contains("display-none")) {
-			sec.classList.add("display-none");
-			sec.classList.remove("display-flex");
-
-		}
-    });
-    window.scrollTo(0, 0);
-};
 
 
 function showPopup(){
