@@ -13,17 +13,6 @@ const body = document.querySelector("body")
 
 
 
-
-function hidePages() {
-	document.querySelectorAll("section").forEach(sec => {
-		if (!sec.classList.contains("display-none")) {
-			sec.classList.add("display-none");
-			sec.classList.remove("display-flex");
-
-		}
-	});
-	window.scrollTo(0, 0);
-};
 function showPage(sectionId) {
     hidePages();
 
@@ -38,7 +27,13 @@ function showPage(sectionId) {
     }
 };
 
-
+function hidePages() {
+	document.querySelectorAll("section").forEach(sec => {
+		sec.classList.add("display-none");
+		sec.classList.remove("display-flex");
+	});
+	window.scrollTo(0, 0);
+};
 
 function showPopup(){
 	popupContainer.classList.add("display-flex")
@@ -98,7 +93,7 @@ window.onpopstate = function (event) {
     if (event.state && event.state.section) {
         showPage(event.state.section);
     } else {
-        showPage("startPage"); // First Page
+        showPage("start-page"); // First Page
     }
 };
 
@@ -108,7 +103,7 @@ window.onload = function () {
     if (document.getElementById(sectionFromURL)) {
         showPage(sectionFromURL);
     } else {
-        showPage("startPage"); //First page
-		history.replaceState({ section: "startPage" }, "", "#startPage");
+        showPage("start-page"); //First page
+		history.replaceState({ section: "start-page" }, "", "#start-page");
     }
 };
