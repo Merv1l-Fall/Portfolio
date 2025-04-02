@@ -30,8 +30,11 @@ function showPage(sectionId) {
 
 function hidePages() {
     document.querySelectorAll("section").forEach(sec => {
-        sec.classList.add("display-none");
-        sec.classList.remove("display-flex");
+		if (!sec.classList.contains("display-none")) {
+			sec.classList.add("display-none");
+			sec.classList.remove("display-flex");
+
+		}
     });
     window.scrollTo(0, 0);
 };
