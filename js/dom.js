@@ -106,5 +106,6 @@ window.onload = function () {
         showPage(sectionFromURL);
     } else {
         showPage("startPage"); //First page
+		history.replaceState({ section: "startPage" }, "", "#startPage");
     }
 };
