@@ -36,6 +36,12 @@ main{
 	position: relative;
 }
 
+section{
+	flex-direction: column;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.432);
+}
+
 button{
 	border: none;
 }
