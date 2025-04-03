@@ -89,21 +89,21 @@ aboutMeLink.addEventListener("click", () => {
 //routing
 
 //make back and forward buttons
-window.onpopstate = function (event) {
-    if (event.state && event.state.section) {
-        showPage(event.state.section);
-    } else {
-        showPage("start-page"); // First Page
-    }
-};
+// window.onpopstate = function (event) {
+//     if (event.state && event.state.section) {
+//         showPage(event.state.section);
+//     } else {
+//         showPage("start-page"); // First Page
+//     }
+// };
 
 //check url to make sure correct section is shown
-window.onload = function () {
-    const sectionFromURL = location.hash.substring(1);
-    if (document.getElementById(sectionFromURL)) {
-        showPage(sectionFromURL);
-    } else {
-        showPage("start-page"); //First page
-		history.replaceState({ section: "start-page" }, "", "#start-page");
-    }
-};
+// window.onload = function () {
+//     const sectionFromURL = location.hash.substring(1);
+//     if (document.getElementById(sectionFromURL)) {
+//         showPage(sectionFromURL);
+//     } else {
+//         showPage("start-page"); //First page
+// 		history.replaceState({ section: "start-page" }, "", "#start-page");
+//     }
+// };
